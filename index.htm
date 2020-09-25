@@ -7,16 +7,19 @@
 
 
 <!--
-var password="";
-  password=prompt('请输入密码:','');
-  if (password != NAME_OF_BOSS)   
-  {alert("密码错误");    
-   window.opener=null; window.close();}  // 密码不正确就关闭//
-  
-else{
-   alert("登陆中……");
-  window.document.f.action=https://yamaeye.github.io/page/monologe.html;
+
+
+function check(){
+   var pass=document.getElementById("pass").value;
+   if(pass==NAME_OF_BOSS){
+   alert("登入成功");
+   window.document.f.action="https://yamaeye.github.io/page/monologe.html";
    window.document.f.submit();
+   }
+
+
+else{
+   alert("密码错误");
 }
   -->
 
