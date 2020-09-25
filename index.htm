@@ -6,28 +6,15 @@
 <script type="text/javascript">
 
 
-
-
    
-function password() {
-var testV = 1;
-var pass1 = prompt('请输入密码','');
-while (testV < 3) {
-if (!pass1)
-history.go(-1);
-if (pass1 == name_of_boss) {//初始密码
-alert('密码正确!');
-break;
+loopy()
+function loopy() {
+var sWord =""
+while (sWord != name_of_boss) {//初始密码
+sWord = prompt("请输入正确密码")
 }
-testV+=1;
-var pass1 =
-prompt('密码错误!请重新输入:');
+alert("载入中……")
 }
-if (pass1!="password" & testV ==3)
-history.go(-1);
-return " ";
-}
-document.write(password());
 
 
 
