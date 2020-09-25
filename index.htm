@@ -9,19 +9,25 @@
 
 
    
-<!--
-   var pass=prompt('请输入密码:','');
-   if(pass=="666"){
-   alert("登入成功");
-   window.document.f.action="https://yamaeye.github.io/page/monologe.html";
-   window.document.f.submit();
-   }
-
-
-else{
-   alert("密码错误");
+function password() {
+var testV = 1;
+var pass1 = prompt('请输入密码','');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1 == name_of_boss) {//初始密码
+alert('密码正确!');
+break;
 }
-     -->
+testV+=1;
+var pass1 =
+prompt('密码错误!请重新输入:');
+}
+if (pass1!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+document.write(password());
 
 
 
