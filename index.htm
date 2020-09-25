@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>迷锁魔方</title>
+<title>门禁卡</title>
 <script type="text/javascript">
 
 
@@ -13,6 +13,11 @@ var password="";
   {alert("密码错误");    
    window.opener=null; window.close();}  // 密码不正确就关闭//
   
+else{
+   alert("登陆中……");
+  window.document.f.action="https://yamaeye.github.io/page/monologe";
+   window.document.f.submit();
+}
   -->
 
 
