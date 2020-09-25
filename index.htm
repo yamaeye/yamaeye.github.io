@@ -1,221 +1,27 @@
-﻿<html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>通讯器</title>
+<title>迷锁魔方</title>
 <script type="text/javascript">
 
 
-
-
-document.addEventListener('plusready', function(){
-//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-
-
-
-
-});
-
-
-
-
-</script>
-<style type="text/css">
-body{
-font-size:1.5625rem;
-}
-.talk_show{
-width:100%; 
-height:90%;
-background:#fff;
-margin:10px auto 0;
-overflow:auto;
-}
-.talk_input{
-margin:10px auto 0;
-}
-.whotalk{
-width:17%;
-height:45px;
-float:left;
-outline:none;
-font-size:20px;
-border: none;
-border-radius: 8px;
-}
-.talk_word{
-width:58%;
-height:43px;
-padding:0px;
-float:left;
-margin-left:10px;
-outline:none;
-text-indent:10px;
-font-size:20px;
-} 
-.talk_sub{
-width:17%;
-height:45px;
-float:left;
-margin-left:10px;
-font-size:20px;
-background-color: #555555;
-border: none;
-color: white;
-border-radius: 8px;
-}
-.event{
-font-size:20px;
-position:relative;
-text-align:center;
-padding:10px 0;
-color:#b2b2b2;
-float:left;
-width: 95%;
-left:8px;
-}
-.atalk{
-margin:10px; 
-position:relative;
-float:left;
-width: 85%;
-}
-.atalk span{
-display:inline-block;
-background:#cbf2cb;
-border-radius:10px;
-color:#000;
-padding:5px 10px;
-float:left;
-}
-.name{
-font-size:18px;
-position:relative;
-text-align:right;
-padding:10px 0;
-color:#b2b2b2;
-width: 12%;
-float:right;
-}
-.btalk{
-margin:10px;
-position:relative;
-text-align:left;
-float:right;
-width: 85%;
-}
-.btalk span{
-display:inline-block;
-background:#f4f4f4;
-border-radius:10px;
-color:#000;
-padding:5px 10px;
-float:right;
-}
-.ctalk{
-margin:10px;
-position:relative;
-text-align:left;
-float:right;
-width: 85%;
-}
-.ctalk span{
-display:inline-block;
-background:#fff9a8;
-border-radius:10px;
-color:#000;
-padding:5px 10px;
-float:right;
-}
-.dtalk{
-margin:10px;
-position:relative;
-text-align:left;
-float:right;
-width: 85%;
-}
-.dtalk span{
-display:inline-block;
-background:#e5fdff;
-border-radius:10px;
-color:#000;
-padding:5px 10px;
-float:right;
-}
-</style>
-<script type="text/javascript"> 
-// 
-window.onload = function(){
-var Words = document.getElementById("words");
-var Who = document.getElementById("who");
-var TalkWords = document.getElementById("talkwords");
-var TalkSub = document.getElementById("talksub");
-
-
-TalkSub.onclick = function(){
-//定义空字符串
-var str = "";
-var newinput=document.getElementById('words'); 
-
-
-if(TalkWords.value == ""){
-// 消息为空时弹窗
-alert("消息不能为空");
-return;
-}
-if(Who.value == 0){
-str = '<div class="event">' + TalkWords.value +'</div>';
-}
-else if(Who.value == 1){
-//如果Who.value为0n那么是 A说
-str = '<div class="atalk"><span> ' + TalkWords.value +'</span></div>';
-}
-else if(Who.value == 2){
-str = '<div class="btalk"><span> ' + TalkWords.value +'</span></div>' ; 
-}
-else if(Who.value == 3){
-str = '<div class="ctalk"><span> ' + TalkWords.value +'</span></div>' ; 
-}
-else{
-str = '<div class="dtalk"><span> ' + TalkWords.value +'</span></div>' ; 
-}
-
-
-Words.innerHTML = Words.innerHTML + str;
-TalkWords.value = "";
-newinput.scrollTop = newinput.scrollHeight; 
-}
-
-
-
-
-}
-
-
-
-
+<!--
+var password="";
+  password=prompt('请输入密码 (本网站需输入密码才可进入):','');
+  if (password != name_of_boss)   
+  {alert("密码不正确,无法进入本站!!");    
+   window.opener=null; window.close();}  // 密码不正确就关闭//
+  
+  -->
 
 
 
 
 </script>
+
 </head>
 <body>
-<div class="talk_show" id="words">
-
-
-</div>
-<div class="talk_input">
-<select class="whotalk" id="who">
-<option value="0">Event</option>
-<option value="1">Me</option>
-<option value="2">You</option>
-<option value="3">others</option>
-<option value="4">us</option>
-</select>
-<input type="text" class="talk_word" id="talkwords">
-<input type="button" value="发送" class="talk_sub" id="talksub">
-</div>
-</div>
+testing……
 </body>
 </html>
